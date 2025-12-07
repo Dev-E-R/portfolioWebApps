@@ -383,6 +383,7 @@ nav {
     height: 100%;
     object-fit: cover;
     transition: transform var(--transition-slow);
+    opacity: 1 !important; /* Forzar visibilidad de imágenes */
 }
 
 .project-card:hover .card-image img {

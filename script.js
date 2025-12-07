@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
+                    
+                    // Asegurar que las imágenes dentro de la card también sean visibles
+                    const images = entry.target.querySelectorAll('img');
+                    images.forEach(img => {
+                        img.style.opacity = '1';
+                    });
                 }, index * 100);
                 observer.unobserve(entry.target);
             }
@@ -126,42 +132,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Transición suave para el header
     header.style.transition = 'transform 0.3s ease';
 
-    // Lazy loading mejorado para imágenes
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    
-    const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                
-                // Si la imagen ya está cargada (en caché), mostrarla inmediatamente
-                if (img.complete && img.naturalHeight !== 0) {
-                    img.style.opacity = '1';
-                } else {
-                    // Si no está cargada, configurar transición
-                    img.style.opacity = '0';
-                    img.style.transition = 'opacity 0.5s ease';
-                    
-                    img.addEventListener('load', () => {
-                        img.style.opacity = '1';
-                    });
-                    
-                    // Manejo de errores
-                    img.addEventListener('error', () => {
-                        img.style.opacity = '1';
-                        console.warn('Error cargando imagen:', img.src);
-                    });
-                }
-                
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-
+    // Asegurar que las imágenes siempre sean visibles
+    const images = document.querySelectorAll('img');
     images.forEach(img => {
-        // Inicializar con transición pero mantener visible
-        img.style.transition = 'opacity 0.5s ease';
-        imageObserver.observe(img);
+        // Forzar opacidad 1 para todas las imágenes
+        img.style.opacity = '1';
+        
+        // Si la imagen no está cargada aún, agregar listener
+        if (!img.complete) {
+            img.addEventListener('load', () => {
+                img.style.opacity = '1';
+            });
+            img.addEventListener('error', () => {
+                console.warn('Error cargando imagen:', img.src);
+            });
+        }
     });
 
     // Prevenir comportamiento por defecto en enlaces sin implementar
