@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Aplicaciones Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <div class="nav-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7572 6.3431L11.9998 2.10046L16.2425 6.3431L11.9998 10.5857L7.7572 6.3431ZM10.5856 6.3431L11.9998 4.92889L13.4141 6.3431L11.9998 7.75732L10.5856 6.3431Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.10046 11.9999L6.3431 7.75726L10.5857 11.9999L6.3431 16.2425L2.10046 11.9999ZM4.92889 11.9999L6.3431 10.5857L7.75732 11.9999L6.3431 13.4141L4.92889 11.9999Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4142 11.9999L17.6568 16.2425L21.8995 11.9999L17.6568 7.75726L13.4142 11.9999ZM17.6568 10.5857L16.2426 11.9999L17.6568 13.4141L19.071 11.9999L17.6568 10.5857Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7572 17.6569L11.9998 13.4142L16.2425 17.6569L11.9998 21.8995L7.7572 17.6569ZM10.5856 17.6569L11.9998 16.2427L13.4141 17.6569L11.9998 19.0711L10.5856 17.6569Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h2>Mi Portafolio</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">INICIO</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Aplicaciones Web</h1>
+            <p class="hero-subtitle">Portafolio de Trabajos por Unidad</p>
+            <div class="hero-description">
+                <p>Bienvenido a mi portafolio web. Aquí encontrarás los proyectos más destacados desarrollados durante el curso de Aplicaciones Web, organizados por unidades temáticas.</p>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos con Diseño Bento -->
+    <section id="proyectos" class="proyectos-section">
+        <h2 class="section-title">Proyectos por Unidad</h2>
+        
+        <div class="bento-grid">
+            <!-- Unidad 1 - VCT Page Work -->
+            <article class="project-card card-large" data-unit="1">
+                <div class="card-header">
+                    <span class="unit-badge">Unidad 1</span>
+                    <div class="card-icons">
+                        <a href="./vct/" class="icon-btn" title="Ver proyecto">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5C7.5 5 4.5 9 3 12C4.5 15 7.5 19 12 19C16.5 19 19.5 15 21 12C19.5 9 16.5 5 12 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="./vct/" class="icon-btn" title="Ver código" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="images/vct-preview.jpg" alt="VCT Page Work Preview" loading="lazy">
+                    <div class="image-overlay">
+                        <p>Ver Proyecto</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>VCT Page Work</h3>
+                    <p class="card-description">Página web informativa sobre el Valorant Champions Tour. Incluye diseño responsive, animaciones CSS y estructura de navegación multi-página.</p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Unidad 2 - JavaUXAnime -->
+            <article class="project-card card-medium" data-unit="2">
+                <div class="card-header">
+                    <span class="unit-badge">Unidad 2</span>
+                    <div class="card-icons">
+                        <a href="./javux/" class="icon-btn" title="Ver proyecto">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5C7.5 5 4.5 9 3 12C4.5 15 7.5 19 12 19C16.5 19 19.5 15 21 12C19.5 9 16.5 5 12 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="./javux/" class="icon-btn" title="Ver código" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="images/javux-preview.jpg" alt="JavaUXAnime Preview" loading="lazy">
+                    <div class="image-overlay">
+                        <p>Ver Proyecto</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>JavaUX Anime</h3>
+                    <p class="card-description">Interfaz de usuario interactiva con JavaScript. Sistema de ventanas modales, menú lateral y búsqueda dinámica.</p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">ES6 Modules</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Unidad 3 - AzumangaNet -->
+            <article class="project-card card-medium" data-unit="3">
+                <div class="card-header">
+                    <span class="unit-badge unit-badge-featured">Unidad 3</span>
+                    <div class="card-icons">
+                        <a href="https://azumanga.up.railway.app" class="icon-btn" title="Ver proyecto">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5C7.5 5 4.5 9 3 12C4.5 15 7.5 19 12 19C16.5 19 19.5 15 21 12C19.5 9 16.5 5 12 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/tuusuario/azumanganet" class="icon-btn" title="Ver código" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="images/azumanga-preview.jpg" alt="AzumangaNet Preview" loading="lazy">
+                    <div class="image-overlay">
+                        <p>Ver Proyecto</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>AzumangaNet</h3>
+                    <p class="card-description">Aplicación web full-stack con Laravel. Sistema de autenticación, CRUD completo y gestión de base de datos MySQL.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Blade</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Portafolio de Aplicaciones Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

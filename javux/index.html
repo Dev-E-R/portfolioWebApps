@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div class="ui">
+        <aside class="menu">
+            <div class="menu-options">
+                <button>
+                    <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.7572 6.3431L11.9998 2.10046L16.2425 6.3431L11.9998 10.5857L7.7572 6.3431ZM10.5856 6.3431L11.9998 4.92889L13.4141 6.3431L11.9998 7.75732L10.5856 6.3431Z"
+                        fill="currentColor"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.10046 11.9999L6.3431 7.75726L10.5857 11.9999L6.3431 16.2425L2.10046 11.9999ZM4.92889 11.9999L6.3431 10.5857L7.75732 11.9999L6.3431 13.4141L4.92889 11.9999Z"
+                        fill="currentColor"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.4142 11.9999L17.6568 16.2425L21.8995 11.9999L17.6568 7.75726L13.4142 11.9999ZM17.6568 10.5857L16.2426 11.9999L17.6568 13.4141L19.071 11.9999L17.6568 10.5857Z"
+                        fill="currentColor"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.7572 17.6569L11.9998 13.4142L16.2425 17.6569L11.9998 21.8995L7.7572 17.6569ZM10.5856 17.6569L11.9998 16.2427L13.4141 17.6569L11.9998 19.0711L10.5856 17.6569Z"
+                        fill="currentColor"
+                    />
+                    </svg>
+                </button>
+                <button>
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6 22.8787C4.34315 22.8787 3 21.5355 3 19.8787V9.87866C3 9.84477 3.00169 9.81126 3.00498 9.77823H3C3 9.20227 3.2288 8.64989 3.63607 8.24262L9.87868 2.00002C11.0502 0.828445 12.9497 0.828445 14.1213 2.00002L20.3639 8.24264C20.7712 8.6499 21 9.20227 21 9.77823H20.995C20.9983 9.81126 21 9.84477 21 9.87866V19.8787C21 21.5355 19.6569 22.8787 18 22.8787H6ZM12.7071 3.41423L19 9.70713V19.8787C19 20.4309 18.5523 20.8787 18 20.8787H15V15.8787C15 14.2218 13.6569 12.8787 12 12.8787C10.3431 12.8787 9 14.2218 9 15.8787V20.8787H6C5.44772 20.8787 5 20.4309 5 19.8787V9.7072L11.2929 3.41423C11.6834 3.02371 12.3166 3.02371 12.7071 3.41423Z"
+                        fill="currentColor"
+                    />
+                    </svg>
+                </button>
+                <button>
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        d="M15.4695 11.2929C15.0789 10.9024 14.4458 10.9024 14.0553 11.2929C13.6647 11.6834 13.6647 12.3166 14.0553 12.7071C14.4458 13.0976 15.0789 13.0976 15.4695 12.7071C15.86 12.3166 15.86 11.6834 15.4695 11.2929Z"
+                        fill="currentColor"
+                    />
+                    <path
+                        d="M16.1766 9.17156C16.5671 8.78103 17.2003 8.78103 17.5908 9.17156C17.9813 9.56208 17.9813 10.1952 17.5908 10.5858C17.2003 10.9763 16.5671 10.9763 16.1766 10.5858C15.7861 10.1952 15.7861 9.56208 16.1766 9.17156Z"
+                        fill="currentColor"
+                    />
+                    <path
+                        d="M19.7121 11.2929C19.3216 10.9024 18.6885 10.9024 18.2979 11.2929C17.9074 11.6834 17.9074 12.3166 18.2979 12.7071C18.6885 13.0976 19.3216 13.0976 19.7121 12.7071C20.1027 12.3166 20.1027 11.6834 19.7121 11.2929Z"
+                        fill="currentColor"
+                    />
+                    <path
+                        d="M16.1766 13.4142C16.5671 13.0237 17.2003 13.0237 17.5908 13.4142C17.9813 13.8048 17.9813 14.4379 17.5908 14.8284C17.2003 15.219 16.5671 15.219 16.1766 14.8284C15.7861 14.4379 15.7861 13.8048 16.1766 13.4142Z"
+                        fill="currentColor"
+                    />
+                    <path d="M6 13H4V11H6V9H8V11H10V13H8V15H6V13Z" fill="currentColor" />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 5C3.13401 5 0 8.13401 0 12C0 15.866 3.13401 19 7 19H17C20.866 19 24 15.866 24 12C24 8.13401 20.866 5 17 5H7ZM17 7H7C4.23858 7 2 9.23858 2 12C2 14.7614 4.23858 17 7 17H17C19.7614 17 22 14.7614 22 12C22 9.23858 19.7614 7 17 7Z"
+                        fill="currentColor"
+                    />
+                    </svg>
+                </button>
+                <button>
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5354 2.87868C16.3638 1.70711 14.4644 1.70711 13.2928 2.87868L11.8786 4.29289C11.8183 4.35317 11.7611 4.41538 11.707 4.47931C11.653 4.41539 11.5958 4.3532 11.5355 4.29293L10.1213 2.87871C8.94975 1.70714 7.05025 1.70714 5.87868 2.87871C4.70711 4.05029 4.70711 5.94978 5.87868 7.12136L6.75732 8H1V14H3V22H21V14H23V8H16.6567L17.5354 7.12132C18.707 5.94975 18.707 4.05025 17.5354 2.87868ZM14.707 7.12132L16.1212 5.70711C16.5117 5.31658 16.5117 4.68342 16.1212 4.29289C15.7307 3.90237 15.0975 3.90237 14.707 4.29289L13.2928 5.70711C12.9023 6.09763 12.9023 6.7308 13.2928 7.12132C13.6833 7.51184 14.3165 7.51184 14.707 7.12132ZM10.1213 5.70714L8.70711 4.29293C8.31658 3.9024 7.68342 3.9024 7.29289 4.29293C6.90237 4.68345 6.90237 5.31662 7.29289 5.70714L8.70711 7.12136C9.09763 7.51188 9.7308 7.51188 10.1213 7.12136C10.5118 6.73083 10.5118 6.09767 10.1213 5.70714ZM21 10V12H3V10H21ZM12.9167 14H19V20H12.9167V14ZM11.0834 14V20H5V14H11.0834Z"
+                        fill="currentColor"
+                    />
+                    </svg>
+                </button>
+                <button>
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8 6.11861L9.4131 4.70551L11.5371 6.82954L14.3667 4L15.7782 5.41151L13.3137 7.87598H18C19.1046 7.87598 20 8.77141 20 9.87598V16.876C20 17.9805 19.1046 18.876 18 18.876H6C4.89543 18.876 4 17.9805 4 16.876V9.87598C4 8.77141 4.89543 7.87598 6 7.87598H9.75736L8 6.11861ZM18 9.87598H6V16.876H18V9.87598Z"
+                        fill="currentColor"
+                    />
+                    <path d="M8 19.876H16V20.876H8V19.876Z" fill="currentColor" />
+                    </svg>
+                </button>
+                <button>
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.775 8C22.9242 8.65461 23 9.32542 23 10H14V1C14.6746 1 15.3454 1.07584 16 1.22504C16.4923 1.33724 16.9754 1.49094 17.4442 1.68508C18.5361 2.13738 19.5282 2.80031 20.364 3.63604C21.1997 4.47177 21.8626 5.46392 22.3149 6.55585C22.5091 7.02455 22.6628 7.5077 22.775 8ZM20.7082 8C20.6397 7.77018 20.5593 7.54361 20.4672 7.32122C20.1154 6.47194 19.5998 5.70026 18.9497 5.05025C18.2997 4.40024 17.5281 3.88463 16.6788 3.53284C16.4564 3.44073 16.2298 3.36031 16 3.2918V8H20.7082Z"
+                        fill="currentColor"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1 14C1 9.02944 5.02944 5 10 5C10.6746 5 11.3454 5.07584 12 5.22504V12H18.775C18.9242 12.6546 19 13.3254 19 14C19 18.9706 14.9706 23 10 23C5.02944 23 1 18.9706 1 14ZM16.8035 14H10V7.19648C6.24252 7.19648 3.19648 10.2425 3.19648 14C3.19648 17.7575 6.24252 20.8035 10 20.8035C13.7575 20.8035 16.8035 17.7575 16.8035 14Z"
+                        fill="currentColor"
+                    />
+                    </svg>
+                    
+                </button>
+                <button>
+                        <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5 4H19C19.5523 4 20 4.44771 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM12 12C9.23858 12 7 9.31371 7 6H9C9 8.56606 10.6691 10 12 10C13.3309 10 15 8.56606 15 6H17C17 9.31371 14.7614 12 12 12Z"
+                            fill="currentColor"
+                        />
+                        </svg>
+                    </button>
+                    <button>
+                        <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path d="M17 9H7V7H17V9Z" fill="currentColor" />
+                        <path d="M7 13H17V11H7V13Z" fill="currentColor" />
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2 18V2H22V18H16V22H14C11.7909 22 10 20.2091 10 18H2ZM12 16V18C12 19.1046 12.8954 20 14 20V16H20V4H4V16H12Z"
+                            fill="currentColor"
+                        />
+                        </svg>
+                    </button>
+            </div>
+        </aside>
+        <main>
+            
+            <nav>
+                <h3>
+                GOOD EVENING,<p>SORA</p>
+                </h3>
+                <div class="nav-search">
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+                        fill="currentColor"
+                    />
+                    </svg>
+                    <input type="text" placeholder="Buscar">
+                </div>
+                <div>
+                    <button>
+                        <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
+                            fill="currentColor"
+                        />
+                        <path
+                            d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
+                            fill="currentColor"
+                        />
+                        <path
+                            d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
+                            fill="currentColor"
+                        />
+                        </svg>
+                    </button>
+                    <button>
+                        <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                            d="M20 7C20 8.65685 18.6569 10 17 10C15.3431 10 14 8.65685 14 7C14 5.34315 15.3431 4 17 4C18.6569 4 20 5.34315 20 7Z"
+                            fill="currentColor"
+                        />
+                        <path d="M12 6H4V20H18V12H16V18H6V8H12V6Z" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div> 
+            </nav>
+
+            <div class="bottom-head-section">
+            <div class="popular-game-window">
+                <div class="content">
+                    <div class="popular-top-buttons">
+                        <button class="trending">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path
+                                    d="M1.41421 16.4322L0 15.018L7.07107 7.94693L13.435 14.3109L17.6777 10.0682L15.9353 8.32587L22.6274 6.53271L20.8343 13.2248L19.0919 11.4825L13.435 17.1393L7.07107 10.7754L1.41421 16.4322Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                            <p>Popular</p>
+                        </button>
+                        <button class="others">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Riot-Games-Logo--Streamline-Logos" height="24" width="24">
+                            <desc>
+                                Riot Games Logo Streamline Icon: https://streamlinehq.com
+                            </desc>
+                            <path fill="#000000" fill-rule="evenodd" d="M15 1 1.5 7.5l2 9.5H6v-7l2 7h2.5V8.5l2 8.5h3L16 7h0.5l1 10h4L23 3l-8 -2Zm-3.5 17.5 9.5 0.5 -0.5 4 -8 -2 -1 -2.5Z" clip-rule="evenodd" stroke-width="1"></path>
+                            </svg>
+                        </button>
+                        <button class="others">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Epic-Games-Logo--Streamline-Logos" height="24" width="24">
+                            <desc>
+                                Epic Games Logo Streamline Icon: https://streamlinehq.com
+                            </desc>
+                            <path fill="#000000" fill-rule="evenodd" d="M4 1a1.5 1.5 0 0 0 -1.5 1.5v16a0.5 0.5 0 0 0 0.297 0.457l9 4a0.5 0.5 0 0 0 0.406 0l9 -4a0.5 0.5 0 0 0 0.297 -0.457v-16A1.5 1.5 0 0 0 20 1H4Zm10.25 11.75h-1.5v-8.5h1.5v8.5ZM8 18.5l4 2 4 -2H8ZM8 4.25H5.25v8.5H8v-1.5H6.75v-2H8v-1.5H6.75v-2H8v-1.5Zm2.5 0H8.75v8.5h1.5v-2.5h0.25a1.75 1.75 0 0 0 1.75 -1.75V6a1.75 1.75 0 0 0 -1.75 -1.75Zm0 4.5h-0.25v-3h0.25a0.25 0.25 0 0 1 0.25 0.25v2.5a0.25 0.25 0 0 1 -0.25 0.25Zm4.25 -3.25c0 -0.69 0.56 -1.25 1.25 -1.25h1.5c0.69 0 1.25 0.56 1.25 1.25v2h-1.5V5.75h-1v5.5h1V9.5h1.5v2c0 0.69 -0.56 1.25 -1.25 1.25H16c-0.69 0 -1.25 -0.56 -1.25 -1.25v-6ZM5.5 16.25h12v-1.5h-12v1.5Z" clip-rule="evenodd" stroke-width="1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>VALORANT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <img draggable="false" src="src/wimg.png" alt="" class="popular-game-image">
+            </div>
+            <div class="other-games-window">
+                <div class="other-games-game">
+                    <div class="other-games-content">
+                        <img src="src/NieR_ Automata Cover _ NieR_ Automata.jpeg" alt="">
+                        <p>Nier Automata</p>
+                    </div>
+                    
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z"
+                        fill="currentColor"
+                    />
+                    </svg>
+                </div>
+                <div class="other-games-game">
+                    <div class="other-games-content">
+                        <img src="src/mhrise.png" alt="">
+                        <p>Monster Hunter Rise</p>
+                    </div>
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z"
+                        fill="currentColor"
+                    />
+                    </svg>
+                </div>
+                <div class="other-games-game">
+                    <div class="other-games-content">
+                        <img src="src/nier_replicant.jpg" alt="">
+                        <p>Nier Replicant</p>
+                    </div>
+                    
+                    <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z"
+                        fill="currentColor"
+                    />
+                    </svg>
+                </div>
+            </div>
+            </div>
+
+            <div class="body-section">
+                <div class="left-body-section">
+                    <div class="head">
+                        <h3>New Games</h3>
+                        <button class="showmore">Show More</button>
+                    </div>
+                    <div class="newgames">
+                        <div class="newgames-1">
+                            <div class="newgames-topbutton">
+                                <button class="play">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                        d="M11.0858 7.75739L15.3284 12L11.0858 16.2427L9.67157 14.8285L12.5 12L9.67157 9.1716L11.0858 7.75739Z"
+                                        fill="currentColor"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
+                                        fill="currentColor"
+                                    />
+                                    </svg>
+                                </button>
+                                <button class="shop">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M5 4H19C19.5523 4 20 4.44771 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM12 12C9.23858 12 7 9.31371 7 6H9C9 8.56606 10.6691 10 12 10C13.3309 10 15 8.56606 15 6H17C17 9.31371 14.7614 12 12 12Z"
+                                        fill="currentColor"
+                                    />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h2>Bioshock Infinite</h2>
+                            <p>Loremp ipsum</p>
+                        </div>
+                        <div class="newgames-2">
+                            <div class="newgames-topbutton">
+                                <button class="play">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                        d="M11.0858 7.75739L15.3284 12L11.0858 16.2427L9.67157 14.8285L12.5 12L9.67157 9.1716L11.0858 7.75739Z"
+                                        fill="currentColor"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
+                                        fill="currentColor"
+                                    />
+                                    </svg>
+                                </button>
+                                <button class="shop">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M5 4H19C19.5523 4 20 4.44771 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM12 12C9.23858 12 7 9.31371 7 6H9C9 8.56606 10.6691 10 12 10C13.3309 10 15 8.56606 15 6H17C17 9.31371 14.7614 12 12 12Z"
+                                        fill="currentColor"
+                                    />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h2>Zenless Zone Zero</h2>
+                            <p>Loremp ipsum</p>
+                        </div>
+                        <div class="newgames-3">
+                            <div class="newgames-topbutton">
+                                <button class="play">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                        d="M11.0858 7.75739L15.3284 12L11.0858 16.2427L9.67157 14.8285L12.5 12L9.67157 9.1716L11.0858 7.75739Z"
+                                        fill="currentColor"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
+                                        fill="currentColor"
+                                    />
+                                    </svg>
+                                </button>
+                                <button class="shop">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M5 4H19C19.5523 4 20 4.44771 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM12 12C9.23858 12 7 9.31371 7 6H9C9 8.56606 10.6691 10 12 10C13.3309 10 15 8.56606 15 6H17C17 9.31371 14.7614 12 12 12Z"
+                                        fill="currentColor"
+                                    />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h2>Persona 5</h2>
+                            <p>Loremp ipsum</p>
+                        </div>
+                    </div>
+                    <div class="head">
+                        <h3>Last Downloads</h3>
+                        <button class="showmore">Show More</button>
+                    </div>
+                    <div class="downloads">
+                        <div class="downloads-left">
+                            <img src="src/fifa23.png" alt="">
+                            <div>
+                                <h3>FIFA 23</h3>
+                                <button>Sports Simulator</button>
+                            </div>
+                        </div>
+                        <div class="downloads-right">
+                            <div>
+                                <h3>1 hour 23 min.</h3>
+                                <p>256Mb of 1,23Gb</p>
+                            </div>
+                            <div>
+                                <button class="play">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                        d="M11.0858 7.75739L15.3284 12L11.0858 16.2427L9.67157 14.8285L12.5 12L9.67157 9.1716L11.0858 7.75739Z"
+                                        fill="currentColor"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
+                                        fill="currentColor"
+                                    />
+                                    </svg>
+                                </button>
+                                <button class="shop">
+                                    <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                        d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                                        fill="currentColor"
+                                    />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-body-section">
+                    <div class="head">
+                        <h3>Your Statistic</h3>
+                        <button class="statistic">
+                            <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path
+                                d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z"
+                                fill="currentColor"
+                            />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="playtime">
+                        <div class="totalhours">
+                            <p>Total hours</p>
+                            <h2>12,340h</h3>
+                        </div>
+                        <div class="playtime-pergame">
+                            <div class="playtime-hours">
+                                <img class="dota" src="src/dota.png" alt="">
+                                <h3>2,340h</h2>
+                            </div>
+                            <div class="playtime-hours">
+                                <img class="rleague" src="src/rocketleague.png" alt="">
+                                <h3>5,420h</h2>
+                            </div>
+                            <div class="playtime-hours">
+                                <img class="csgo" src="src/csgo.png" alt="">
+                                <h3>4,580h</h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <aside class="right-menu">
+            <div class="user-avatars">
+                <div class="avatar-item active">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="User 1">
+                    <span class="status-badge">In Game</span>
+                </div>
+                <div class="avatar-item">
+                    <img src="https://i.pravatar.cc/150?img=2" alt="User 2">
+                </div>
+                <div class="avatar-item">
+                    <img src="https://i.pravatar.cc/150?img=3" alt="User 3">
+                </div>
+                <div class="avatar-item">
+                    <img src="https://i.pravatar.cc/150?img=4" alt="User 4">
+                </div>
+                <div class="avatar-item">
+                    <img src="https://i.pravatar.cc/150?img=5" alt="User 5">
+                </div>
+                <div class="avatar-item">
+                    <img src="https://i.pravatar.cc/150?img=6" alt="User 6">
+                </div>
+                <div class="avatar-item">
+                    <img src="https://i.pravatar.cc/150?img=7" alt="User 7">
+                </div>
+                <div class="avatar-item">
+                    <img src="https://i.pravatar.cc/150?img=8" alt="User 8">
+                </div>
+            </div>
+            <div class="bottom-icons">
+                <button class="icon-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <button class="icon-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z" fill="currentColor"/>
+                        <path d="M12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <div class="avatar-item">
+                    <img src="https://i.pravatar.cc/150?img=9" alt="User 9">
+                </div>
+                <div class="avatar-item">
+                    <img src="https://i.pravatar.cc/150?img=10" alt="User 10">
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+    
+</body>
+</html>

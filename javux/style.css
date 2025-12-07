@@ -1,0 +1,703 @@
+/* estilos de body temporales */
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #e8c4c4;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px; /* espacio para ver el efecto */
+}
+
+.ui{
+    display: flex;
+    gap: 1rem;
+    background-color: #682f2f;
+    padding: 1rem;
+    border-radius: 24px;
+}
+
+nav{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > div > button{
+    border-style: none;
+    width: 45px;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.393);
+}
+
+nav > div > button > svg{
+    filter: invert();
+}
+
+.nav-search{
+    position: relative;
+    left: 100px;
+    width: 260px;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.226);
+    border-radius: 24px;
+    height: fit-content;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.nav-search > input{
+    border-style: none;
+    background: none;
+    color: white;
+}
+.nav-search > svg{
+    filter: invert();
+    opacity: 30%;
+}
+
+nav > h3{
+    height: 10px;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    color: #e8b4a8;
+}
+
+nav > h3 > p {
+    color: white;
+}
+.menu{
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.393);
+    padding: 1rem;
+    border-radius: 24px;
+}
+
+.menu-options{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu-options > button{
+    padding: 0.2rem;
+    border-style: none;
+    background: none;
+}
+.menu-options > button > svg{
+    filter: invert();
+}
+
+.bottom-head-section{
+    display: flex;
+    gap: 1rem;
+}
+
+.popular-game-window{
+    position: relative;
+
+    width: 600px;
+    height: 280px;
+    background-color: #d47676;
+    border-radius: 40px;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+    padding: 25px;
+    /* clave para que se corte el contenido */
+    box-sizing: border-box;
+    color: white;
+    clip-path:inset(-100vmax -100vmax 0%);
+}
+.popular-game-image{
+    
+    position: absolute;
+    width:  auto;
+    height: 490px;
+    bottom: -200px;
+    right: -60px;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+}
+.content{
+    width: 20%;
+}
+
+.popular-top-buttons{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.popular-top-buttons > .others{
+    border-radius: 24px;
+    border-style: none;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    min-width: 45px;
+    background-color: rgb(33, 31, 31,0.8);
+}
+.others > svg{
+    filter: invert();
+}
+.trending{
+    border-radius: 24px;
+    border-style: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 700;
+    background-color: rgb(255, 223, 176);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.other-games-window{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.other-games-game > .other-games-content{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.other-games-window > div{
+    align-items: center;
+    height: 60px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    color: white;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.other-games-game img {
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    object-fit: cover;
+}
+.other-games-window svg{
+    padding: 1rem;
+}
+
+.body-section{
+    display: flex;
+    gap: 1rem;
+}
+
+.left-body-section{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.right-body-section{
+    width: 320px;
+}
+.head{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showmore{
+    color: #e8b4a8;
+}
+
+.newgames-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.newgames-wrapper{
+    overflow: hidden;
+    width: 100%;
+    flex: 1;
+}
+
+.newgames{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.newgames::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.carousel-btn{
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.393);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+}
+
+.carousel-btn svg{
+    filter: invert();
+}
+
+.newgames > div{
+    position: relative;
+    border-radius: 24px;
+    height: 200px;
+    min-width: 200px;
+    width: 200px;
+    padding: 8px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.newgames > div > *{
+    position: relative;
+    z-index: 1;
+}
+.newgames-1{
+    color: white;
+}
+
+.newgames-1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(src/bioinfibg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    z-index: 0;
+    border-radius: 24px;
+}
+
+.newgames-2{
+    color: white;
+}
+.newgames-2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(src/zzz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    z-index: 0;
+    border-radius: 24px;
+}
+.newgames-3{
+    color: white;
+}
+.newgames-3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(src/persona5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    z-index: 0;
+    border-radius: 24px;
+}
+.newgames-topbutton{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+}
+.play{
+    background-color: #d47676;
+    border-style: none;
+    border-radius:100%;
+    padding: 0.5rem;
+}
+.play > svg{
+    filter: invert();
+}
+.shop{
+    border-style: none;
+    border-radius:100%;
+    padding: 0.5rem;
+}
+
+.statistic{
+    filter: invert();
+}
+
+.playtime{
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.totalhours{
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background: rgba(20, 20, 20, 0.6);
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.totalhours::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: conic-gradient(
+        from 0deg,
+        #d47676 0deg,
+        #e8b4a8 60deg,
+        #ffd8a8 120deg,
+        #a78bfa 180deg,
+        #8b7bdc 240deg,
+        #d47676 300deg,
+        #d47676 360deg
+    );
+    border-radius: 50%;
+    animation: rotate-gradient 3s linear infinite;
+    z-index: 0;
+}
+
+.totalhours::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: linear-gradient(135deg, rgba(30, 20, 25, 1) 0%, rgba(40, 25, 30, 1) 100%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+@keyframes rotate-gradient {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.totalhours > h2{
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.totalhours > p{
+    color: #e8b4a8;
+    font-size: small;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 0.3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.playtime > .playtime-pergame{
+    display: flex;
+    width: 260px;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.playtime-hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.playtime-hours > h3{
+    color: white;
+    margin: 1rem;
+}
+
+.dota{
+    width: 40px;
+    background-color: hsl(0, 65%, 60%);
+    padding: 1rem;
+    border-radius: 4rem;
+}
+.rleague{
+    width: 40px;
+    background-color: hsl(50, 85%, 75%);
+    padding: 1rem;
+    border-radius: 4rem;
+}
+.csgo{
+    width: 40px;
+    background-color: hsl(260, 60%, 65%);
+    padding: 1rem;
+    border-radius: 4rem;
+}
+
+.head > button{
+    border-style: none;
+    background: none;
+
+}
+
+.downloads{
+    background: linear-gradient(135deg, rgba(212, 118, 118, 1) 0%, rgba(169, 85, 85, 1) 50%, rgba(101, 45, 45, 1) 100%);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.downloads::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.downloads-left{
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.downloads-left > img{
+    width: 85px;
+    height: 85px;
+    border-radius: 18px;
+    transition: transform 0.3s ease;
+}
+
+.downloads-left > img:hover{
+    transform: scale(1.05);
+}
+
+.downloads-left > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.downloads-left > div > h3{
+    margin: 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.downloads-left > div > p{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+}
+
+.downloads-left > div > button{
+    border-style: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 18px;
+    margin: 0;
+    background-color: rgba(255, 223, 176, 1);
+    color: #5a3a3a;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.downloads-left > div > button:hover{
+    background-color: rgba(255, 235, 205, 1);
+    transform: translateY(-2px);
+}
+
+.downloads-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.downloads-right > h2{
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.downloads-right > p{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.downloads-progress{
+    margin-top: 0.5rem;
+    width: 150px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.downloads-progress-bar{
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 223, 176, 1) 0%, rgba(255, 255, 255, 0.9) 100%);
+    border-radius: 10px;
+    animation: progress-animation 2s ease-in-out infinite;
+}
+
+@keyframes progress-animation {
+    0%, 100% { width: 40%; }
+    50% { width: 70%; }
+}
+
+/* Menú lateral derecho con avatares */
+.right-menu{
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.393);
+    padding: 1rem;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatars{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.user-avatars::-webkit-scrollbar {
+    display: none;
+}
+
+.avatar-item{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.avatar-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-item.active{
+    border: 3px solid #d47676;
+}
+
+.status-badge{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d47676;
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.bottom-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.icon-btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn svg{
+    filter: invert();
+}

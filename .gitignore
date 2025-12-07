@@ -1,0 +1,24 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (si los hay)
+node_modules/
+npm-debug.log*
+
+# Backups
+*.backup
+*.bak
+
+# Archivos temporales
+*.tmp
+*.log
