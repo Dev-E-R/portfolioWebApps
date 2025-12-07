@@ -133,19 +133,36 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
-                img.style.opacity = '0';
-                img.style.transition = 'opacity 0.5s ease';
                 
-                img.addEventListener('load', () => {
+                // Si la imagen ya está cargada (en caché), mostrarla inmediatamente
+                if (img.complete && img.naturalHeight !== 0) {
                     img.style.opacity = '1';
-                });
+                } else {
+                    // Si no está cargada, configurar transición
+                    img.style.opacity = '0';
+                    img.style.transition = 'opacity 0.5s ease';
+                    
+                    img.addEventListener('load', () => {
+                        img.style.opacity = '1';
+                    });
+                    
+                    // Manejo de errores
+                    img.addEventListener('error', () => {
+                        img.style.opacity = '1';
+                        console.warn('Error cargando imagen:', img.src);
+                    });
+                }
                 
                 imageObserver.unobserve(img);
             }
         });
     });
 
-    images.forEach(img => imageObserver.observe(img));
+    images.forEach(img => {
+        // Inicializar con transición pero mantener visible
+        img.style.transition = 'opacity 0.5s ease';
+        imageObserver.observe(img);
+    });
 
     // Prevenir comportamiento por defecto en enlaces sin implementar
     document.querySelectorAll('a[href="#"]').forEach(link => {
